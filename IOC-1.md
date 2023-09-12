@@ -8,7 +8,7 @@ IOC，**控制反转**，Inverse of Control，是一种**编程原则**，它的
 - 如何将控制权转移出去：将原有的对象间的**主动依赖改为被动接受型依赖**。
 
 ### 怎么使用IOC？
-#####例子如下(Java)：
+##### 例子如下(Java)：
 ```java{.line-numbers}
 private DemoDao dao = new DemoDaoImpl();
 
