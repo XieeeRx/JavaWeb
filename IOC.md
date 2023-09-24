@@ -48,7 +48,7 @@ private DemoDao dao = (DemoDao) BeanFactory.getBean("demoDao");
 
 ### 详解-依赖注入
 正如我们前面所强调的，依赖注入（Dependency Injection, DI）是一种软件**设计模式**。用于管理和处理**组件之间的关系**。
-*核心思想*：将依赖项注入到需要它们的对象中，而不是在对象内部直接创建这些依赖项，有助于**降低**组件之间的**耦合度**。主要通过以下方式实现：
+*核心思想*：将依赖项注入到需要它们的对象中，而不是在对象内部直接创建这些依赖项，有助于**降低**组件之间的**耦合度**。主要通过以下方式实现：  
 **1. 属性[setter]注入：**
 - **一种是基于xml的setter注入方式：**
 ```Java {.line-numbers}
@@ -97,7 +97,7 @@ public Person person() {
     return new Person("test-person-anno-byconstructor", 18);
 }
 ```
-注解驱动的bean注册中，也是直接使用编程式赋值即可。
+注解驱动的bean注册中，也是直接使用编程式赋值即可。  
 **3.注解式属性注入：**
 - **@Component下的属性注解：**
 ```Java {.line-numbers}
